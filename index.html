@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cybercrime awareness and online safety for rural communities.">
+    <title>CyberSmart | Cybercrime Awareness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+   <a href="#home" class="logo">
+    <span class="logo-icon">🛡️</span>
+    <span class="logo-text">Cyber<span>Smart</span></span>
+</a>
+
+    <select id="language" aria-label="Choose language">
+        <option value="en">English</option>
+        <option value="mr">मराठी</option>
+    </select>
+</header>
+
+<nav class="navbar">
+    <a href="#home" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a>
+    <a href="#checker" data-en="Scam Checker" data-mr="फसवणूक तपासणी">Scam Checker</a>
+    <a href="#awareness" data-en="Awareness" data-mr="जनजागृती">Awareness</a>
+    <a href="#quiz" data-en="Quiz" data-mr="प्रश्नमंजुषा">Quiz</a>
+    <a href="#report" data-en="Report Fraud" data-mr="तक्रार नोंदवा">Report Fraud</a>
+</nav>
+
+<main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline" data-en="A safer digital India starts with awareness"
+               data-mr="सुरक्षित डिजिटल भारताची सुरुवात जनजागृतीतून">
+                A safer digital India starts with awareness
+            </p>
+
+            <h1 data-en="Stay Alert. Stay Safe Online."
+                data-mr="सावध राहा. ऑनलाइन सुरक्षित राहा.">
+                Stay Alert. Stay Safe Online.
+            </h1>
+
+            <p data-en="Learn to recognize cyber fraud, protect your digital payments, and help your community stay safe."
+               data-mr="सायबर फसवणूक ओळखा, डिजिटल पेमेंट सुरक्षित ठेवा आणि आपल्या समाजाला सुरक्षित राहण्यास मदत करा.">
+                Learn to recognize cyber fraud, protect your digital payments,
+                and help your community stay safe.
+            </p>
+
+            <a href="#checker" class="btn"
+               data-en="Check a Suspicious Message"
+               data-mr="संशयास्पद संदेश तपासा">
+                Check a Suspicious Message
+            </a>
+        </div>
+    </section>
+
+    <section class="section" id="checker">
+        <h2 data-en="Suspicious Message Checker"
+            data-mr="संशयास्पद संदेश तपासणी">
+            Suspicious Message Checker
+        </h2>
+
+        <p data-en="Paste a suspicious SMS or message to look for common warning signs."
+           data-mr="सामान्य धोक्याची चिन्हे तपासण्यासाठी संशयास्पद SMS किंवा संदेश येथे टाका.">
+            Paste a suspicious SMS or message to look for common warning signs.
+        </p>
+
+        <label for="message" data-en="Your message"
+               data-mr="तुमचा संदेश">Your message</label>
+
+        <textarea id="message" rows="5"
+            placeholder="Example: Your account will be blocked. Share your OTP now."
+            data-placeholder-en="Example: Your account will be blocked. Share your OTP now."
+            data-placeholder-mr="उदाहरण: तुमचे खाते बंद होईल. आत्ताच OTP सांगा."></textarea>
+
+        <div class="button-row">
+            <button class="btn" id="checkBtn"
+                data-en="Check Message" data-mr="संदेश तपासा">
+                Check Message
+            </button>
+            <button class="btn btn-secondary" id="clearBtn"
+                data-en="Clear" data-mr="पुसून टाका">
+                Clear
+            </button>
+        </div>
+
+        <div id="checkerResult" class="result" role="status"
+             aria-live="polite" hidden></div>
+
+        <p class="small-note"
+           data-en="This basic checker uses keywords, not AI. It can miss scams or flag legitimate messages. Never enter real passwords, OTPs, PINs or banking details."
+           data-mr="हे प्राथमिक साधन शब्दांवर आधारित आहे; ते फसवणूक ओळखण्यात चुकू शकते. खरे पासवर्ड, OTP, PIN किंवा बँक तपशील टाकू नका.">
+            This basic checker uses keywords, not AI. It can miss scams or
+            flag legitimate messages. Never enter real passwords, OTPs, PINs
+            or banking details.
+        </p>
+    </section>
+
+    <section class="section light" id="awareness">
+        <h2 data-en="Learn About Cyber Fraud"
+            data-mr="सायबर फसवणुकीबद्दल जाणून घ्या">
+            Learn About Cyber Fraud
+        </h2>
+
+        <div class="card-grid">
+            <article class="card">
+                <span class="card-icon">📱</span>
+                <h3 data-en="OTP Fraud" data-mr="OTP फसवणूक">OTP Fraud</h3>
+                <p data-en="Never share your OTP with callers or strangers, even if they claim to be bank staff."
+                   data-mr="समोरची व्यक्ती बँकेतील कर्मचारी असल्याचे सांगत असली तरी OTP शेअर करू नका.">
+                    Never share your OTP with callers or strangers, even if
+                    they claim to be bank staff.
+                </p>
+            </article>
+
+            <article class="card">
+                <span class="card-icon">💳</span>
+                <h3 data-en="UPI Fraud" data-mr="UPI फसवणूक">UPI Fraud</h3>
+                <p data-en="You generally do not need to enter your UPI PIN to receive money. Check carefully before approving a payment."
+                   data-mr="पैसे मिळवण्यासाठी सामान्यतः UPI PIN टाकण्याची गरज नसते. पेमेंट मंजूर करण्यापूर्वी तपासा.">
+                    You generally do not need to enter your UPI PIN to receive
+                    money. Check carefully before approving a payment.
+                </p>
+            </article>
+
+            <article class="card">
+                <span class="card-icon">🔗</span>
+                <h3 data-en="Phishing Links" data-mr="बनावट लिंक">Phishing Links</h3>
+                <p data-en="Avoid unknown links asking for account details, payments, or urgent verification."
+                   data-mr="खात्याचे तपशील, पैसे किंवा तातडीची पडताळणी मागणाऱ्या अनोळखी लिंक टाळा.">
+                    Avoid unknown links asking for account details, payments,
+                    or urgent verification.
+                </p>
+            </article>
+
+            <article class="card">
+                <span class="card-icon">💼</span>
+                <h3 data-en="Fake Job Offers" data-mr="बनावट नोकरीच्या ऑफर्स">Fake Job Offers</h3>
+                <p data-en="Verify the company independently. Be careful when a recruiter demands advance fees."
+                   data-mr="कंपनीची स्वतंत्रपणे पडताळणी करा. नोकरी देण्यापूर्वी पैसे मागितल्यास सावध राहा.">
+                    Verify the company independently. Be careful when a
+                    recruiter demands advance fees.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section" id="quiz">
+        <h2 data-en="Test Your Cyber Safety Knowledge"
+            data-mr="सायबर सुरक्षिततेची चाचणी">
+            Test Your Cyber Safety Knowledge
+        </h2>
+
+        <div class="quiz-box">
+            <p id="questionNumber">Question 1 of 5</p>
+            <h3 id="question">Loading question...</h3>
+            <div id="options" class="options"></div>
+            <p id="quizFeedback" role="status" aria-live="polite"></p>
+            <button class="btn" id="nextBtn" disabled>Next Question</button>
+        </div>
+    </section>
+
+    <section class="section light" id="report">
+        <h2 data-en="Need to Report Cybercrime?"
+            data-mr="सायबर गुन्ह्याची तक्रार करायची आहे?">
+            Need to Report Cybercrime?
+        </h2>
+
+        <div class="report-box">
+            <h3>📞 1930</h3>
+            <p data-en="If you experience financial cyber fraud, contact the national helpline promptly."
+               data-mr="आर्थिक सायबर फसवणूक झाल्यास राष्ट्रीय हेल्पलाइनवर त्वरित संपर्क साधा.">
+                If you experience financial cyber fraud, contact the national
+                helpline promptly.
+            </p>
+
+            <a class="btn" href="https://cybercrime.gov.in/"
+               target="_blank" rel="noopener noreferrer"
+               data-en="Official Cybercrime Reporting Portal"
+               data-mr="अधिकृत सायबर गुन्हे तक्रार पोर्टल">
+                Official Cybercrime Reporting Portal
+            </a>
+
+            <p class="small-note"
+               data-en="Keep transaction IDs and relevant evidence. Contact your bank as well if money is involved. Never share your OTP or PIN with anyone claiming to help."
+               data-mr="व्यवहार क्रमांक आणि संबंधित पुरावे जतन करा. पैसे गेले असल्यास बँकेशीही संपर्क साधा. मदत करण्याचा दावा करणाऱ्या व्यक्तीला OTP किंवा PIN सांगू नका.">
+                Keep transaction IDs and relevant evidence. Contact your bank
+                as well if money is involved. Never share your OTP or PIN with
+                anyone claiming to help.
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>CyberSmart — Community Cybercrime Awareness Project</p>
+    <p>Learn • Recognize • Report • Stay Safe</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
